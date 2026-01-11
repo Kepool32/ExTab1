@@ -1,0 +1,97 @@
+.textField {
+  width: 100%;
+}
+
+.textFieldAsterisk {
+  display: none;
+}
+
+.textFieldRoot {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .textFieldRoot {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .textFieldRoot {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .textFieldRoot {
+    font-size: 1rem;
+  }
+}
+
+.dialogPaper {
+  margin: 0;
+  max-height: 100%;
+}
+
+@media (min-width: 600px) {
+  .dialogPaper {
+    margin: 16px;
+    max-height: 90vh;
+  }
+}
+
+.dialogTitle {
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .dialogTitle {
+    font-size: 1.25rem;
+  }
+}
+
+.dialogContent {
+  padding-top: 16px;
+}
+
+@media (min-width: 600px) {
+  .dialogContent {
+    padding-top: 8px;
+  }
+}
+
+.dialogActions {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  flex-direction: row;
+  gap: 0;
+}
+
+@media (max-width: 600px) {
+  .dialogActions {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.closeButton {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .closeButton {
+    display: flex;
+  }
+  .button {
+    text-transform: none;
+    margin-left: 0!important;
+  }
+}
+
+.button {
+  text-transform: none;
+}

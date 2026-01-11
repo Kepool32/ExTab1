@@ -1,0 +1,33 @@
+.textField {
+  width: 100%;
+}
+
+.textFieldAsterisk {
+  display: none;
+}
+
+.textFieldRoot {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .textFieldRoot {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .textFieldRoot {
+    font-size: 0.9375rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .textFieldRoot {
+    font-size: 1rem;
+  }
+}
+
+.button {
+  text-transform: none;
+}

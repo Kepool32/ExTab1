@@ -1,0 +1,62 @@
+.taskCard {
+  margin-bottom: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(to right, #ffffff 0%, #fafafa 100%);
+}
+
+.taskCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+.taskCardCompleted {
+  opacity: 0.9;
+}
+
+.taskCardBorder {
+  border-left: 4px solid #6366f1;
+}
+
+.taskCardBorderCompleted {
+  border-left-color: #10b981;
+}
+
+.iconButtonEdit {
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.iconButtonEdit:hover {
+  background-color: rgba(99, 102, 241, 0.08);
+  transform: scale(1.05);
+}
+
+.iconButtonDelete {
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.iconButtonDelete:hover {
+  background-color: rgba(239, 68, 68, 0.08);
+  transform: scale(1.05);
+}
+
+@media (min-width: 600px) {
+  .taskCard {
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 599px) {
+  .taskCard:hover {
+    transform: none;
+  }
+
+  .taskCard {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}
