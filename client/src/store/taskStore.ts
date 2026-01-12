@@ -33,7 +33,7 @@ export const useTaskStore = create<TaskStore>((set) => ({
       set({ tasks: Array.isArray(tasks) ? tasks : [], loading: false });
     } catch (error) {
       console.error('Failed to fetch tasks:', error);
-      set({ tasks: [], loading: true });
+      set({ tasks: [], loading: false });
     }
   },
 
@@ -61,6 +61,8 @@ export const useTaskStore = create<TaskStore>((set) => ({
         ),
       }));
     } catch (error) {
+      console.error('Failed to update task:', error);
+      throw error;
     }
   },
 
@@ -88,6 +90,8 @@ export const useTaskStore = create<TaskStore>((set) => ({
         tasks: (state.tasks || []).filter((task) => task.id !== id),
       }));
     } catch (error) {
+      console.error('Failed to delete task:', error);
+      throw error;
     }
   },
 

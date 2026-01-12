@@ -47,6 +47,7 @@ DB_PORT=5432
 DB_USERNAME=postgres
 DB_PASSWORD=postgres
 DB_NAME=tasks_db
+CORS_ORIGIN=http://localhost:5173
 ```
 
 ## Technologies
@@ -58,6 +59,8 @@ DB_NAME=tasks_db
 - PostgreSQL
 - Swagger
 - Docker
+- Helmet (security headers)
+- Express Rate Limit
 
 ## Features
 
@@ -66,3 +69,6 @@ DB_NAME=tasks_db
 - Automatic database creation in PostgreSQL
 - Swagger documentation
 - Docker support
+- Security headers (Helmet)
+- Rate limiting (100 requests per 15 minutes per IP)
+- CORS protection
